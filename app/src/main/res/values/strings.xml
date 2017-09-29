@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="setColor">SetColor</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+</resources>

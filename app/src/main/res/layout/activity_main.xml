@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+
+    tools:context="com.example.hp.linearlayout.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        android:layout_marginRight="@dimen/margin_radio"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_radio"
+        android:layout_height="0dp">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:id="@+id/rb_red"
+                android:text="@string/red"
+                app:buttonTint="@color/colorRed"
+                android:textColor="@android:color/white"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:id="@+id/rb_green"
+                android:text="@string/green"
+                app:buttonTint="@color/colorGreen"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:id="@+id/rb_blue"
+                android:text="@string/blue"
+                app:buttonTint="@color/colorBlue"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="right|center"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_set_color"
+            android:text="@string/setColor"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/btn_cancel"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/btn_clear"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_margin="@dimen/margin_layout"
+        android:id="@+id/tv_background"
+        android:background="@android:color/white"
+        android:layout_height="0dp" />
+</LinearLayout>
